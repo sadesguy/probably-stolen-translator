@@ -16,7 +16,7 @@ This community mod prepares Russian translations **before you open a save**. Onc
    └── LocalModTranslator.dll
    ```
 3. Start the game. In **Mods** (`Моды`), select **Локальный переводчик модов** and activate it. The mod asks for network access to reach your local helper and permission to open this guide in your browser. If upgrading from [0.4.11](https://github.com/sadesguy/probably-stolen-translator/releases/tag/v0.4.11), select **Review and enable** to approve the new browser-link permission. Enable the mods you want translated, restart the game and select **Русский** as the game language. [How the game handles permissions and updates.](https://github.com/dragonpan2/probably-stolen-modding/blob/main/ModdingGuide.md#what-players-see)
-4. In the main menu, open the translator's **settings**. If a matching offline pack is already installed, load your save and play. Otherwise click **Перевести все моды** (“Translate all mods”). If the helper isn't running, click **Открыть инструкцию на GitHub** (“Open the guide on GitHub”). This opens the instructions in your browser; it doesn't download or start the helper. **Leave the settings window open.**
+4. In the main menu, open the translator's **settings**. If a matching offline pack is already installed, load your save and play. Otherwise click **Перевести все моды** (“Translate all mods”). If the helper isn't running, click **Открыть инструкцию на GitHub** (“Open the guide on GitHub”). If no browser appears, open `https://sadesguy.github.io/probably-stolen-translator/en.html#helper` in your browser. **Leave the settings window open.**
 
 If you install a future Workshop release instead, subscribe, let Steam finish downloading, then follow step 3. Don't install both versions: the local copy takes priority. See the [game developer's activation guide](https://github.com/dragonpan2/probably-stolen-modding/blob/main/ModdingGuide.md#steam-workshop).
 
@@ -36,6 +36,14 @@ Download **one** file for your computer. Extract the **entire** archive to your 
 - **Windows:** Use a local NTFS drive. The helper includes Python. It needs a physical Vulkan-capable GPU, its driver, and the [Microsoft Visual C++ v14 x64 runtime](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist).
 - **Mac:** The helper uses Metal and needs native ARM64 Python 3.9 or newer. If missing, use the [Python.org macOS installer](https://www.python.org/downloads/macos/). Intel Macs and Rosetta Python are not supported.
 - **First run:** Allow about **6 GB of free disk space**, plus enough GPU memory for the model. The helper asks before downloading about **5.2 GB**: [Google's Gemma model](https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf) and the [llama.cpp engine](https://github.com/ggml-org/llama.cpp/releases/tag/b12477). No need to install them manually. Your dialogue is processed locally, never sent to a cloud translator. To check your ZIP, compare its SHA-256 against the [release checksums](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12/SHA256SUMS.txt).
+
+### If your Mac says “Start Translator.command” Not Opened
+
+If Apple says it **could not verify** the file, click **Done**. The launcher is unsigned and has not been notarized by Apple. If macOS instead says the file **contains malware**, is damaged or will damage your computer, **do not run it**.
+
+If you downloaded the ZIP from this release, open Terminal and run `shasum -a 256 ~/Downloads/Mac-Local-AI.zip`. Compare the result with the `Mac-Local-AI.zip` line in the [0.4.12 checksums](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12/SHA256SUMS.txt). Stop if they differ.
+
+Only if you trust the source and the checksum matches: go to **System Settings → Privacy & Security**, find the warning for `Start Translator.command`, click **Open Anyway**, then **Open**. This makes an exception for that file only; don't disable Gatekeeper. [Apple’s walkthrough with screenshots](https://support.apple.com/en-us/102445).
 
 ## 3. Prepare, then play offline
 
