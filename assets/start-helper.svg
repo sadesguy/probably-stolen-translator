@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 696" width="680" height="696" role="img" aria-labelledby="title desc">
+<title id="title">Какой файл открыть</title>
+<desc id="desc">Сначала откройте игру и полностью распакуйте архив для своей системы. Windows: в папке helper дважды щёлкните Start Translator.cmd. На Mac с Apple Silicon: в папке companion дважды щёлкните Start Translator.command.</desc>
+<defs>
+  <g id="folder" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="M2 9V5h12l4 5h19v22H2Z"/><path d="M2 13h35"/></g>
+  <g id="file" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 1h14l7 7v24H5Z"/><path d="M19 1v8h7m-17 5 4 4-4 4m6 0h5"/></g>
+</defs>
+<rect x="0" y="0" width="680" height="696" rx="20" fill="#12222e"/>
+<g font-family="Arial, DejaVu Sans, sans-serif">
+<text x="28" y="44" fill="#9fded3" font-size="17" font-weight="bold" letter-spacing="2">ПАМЯТКА  /  01</text>
+<text x="27" y="97" fill="#fff" font-size="41" font-weight="bold">Какой файл открыть?</text>
+<text x="28" y="142" font-size="26" fill="#d3e1ea">Откройте игру. Распакуйте ZIP целиком.</text>
+
+<rect x="24" y="170" width="632" height="205" rx="14" fill="#f0f7ff"/>
+<rect x="24" y="170" width="8" height="205" rx="4" fill="#78b4e1"/>
+<text x="50" y="215" font-size="30" font-weight="bold" fill="#143555">Windows x64</text>
+<text x="50" y="247" font-size="22" fill="#344d60">Архив: Windows-Local-AI.zip</text>
+<use href="#folder" x="53" y="270" color="#345986"/>
+<text x="110" y="294" font-size="26" font-weight="bold" fill="#1d3d57">helper</text>
+<path d="M72 307v27h28" fill="none" stroke="#6683a0" stroke-width="3"/>
+<use href="#file" x="110" y="318" color="#345986"/>
+<text x="156" y="344" font-family="Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="25" fill="#162d43">Start Translator.cmd</text>
+
+<rect x="24" y="391" width="632" height="205" rx="14" fill="#eaf7f1"/>
+<rect x="24" y="391" width="8" height="205" rx="4" fill="#74c9b0"/>
+<text x="50" y="436" font-size="30" font-weight="bold" fill="#13483c">macOS · Apple Silicon</text>
+<text x="50" y="468" font-size="22" fill="#34574d">Архив: Mac-Local-AI.zip</text>
+<use href="#folder" x="53" y="491" color="#28705b"/>
+<text x="110" y="515" font-size="26" font-weight="bold" fill="#184c40">companion</text>
+<path d="M72 528v27h28" fill="none" stroke="#648c7e" stroke-width="3"/>
+<use href="#file" x="110" y="539" color="#28705b"/>
+<text x="156" y="565" font-family="Menlo, Consolas, DejaVu Sans Mono, monospace" font-size="25" fill="#163d33">Start Translator.command</text>
+
+<g transform="translate(36 621)" fill="none" stroke="#ffe1a0" stroke-width="3" stroke-linejoin="round"><path d="M4 0l24 16-11 2 5 11-5 2-5-11-8 7Z"/></g>
+<text x="88" y="641" font-size="25" font-weight="bold" fill="#ffe5a8">Дважды щёлкните файл Start Translator.</text>
+<text x="88" y="673" font-size="23" fill="#d3e1ea">Игру не закрывайте.</text>
+</g>
+</svg>

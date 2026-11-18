@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 820" width="680" height="820" role="img" aria-labelledby="title desc">
+<title id="title">От настройки до офлайн-пакета</title>
+<desc id="desc">В настройках мода перед загрузкой сохранения нажмите «Перевести все моды». Если помощник не запущен, откройте его, дождитесь готовности и нажмите «Проверить и продолжить». Оставьте настройки открытыми до подтверждения «Офлайн-пакет готов». В дальнейшем сохранённый пакет работает без сети и помощника.</desc>
+<rect width="680" height="820" rx="20" fill="#12222e"/>
+<g font-family="Arial, DejaVu Sans, sans-serif">
+<text x="28" y="44" fill="#9fded3" font-size="17" font-weight="bold" letter-spacing="2">ПАМЯТКА  /  02</text>
+<text x="27" y="97" fill="#fff" font-size="40" font-weight="bold">От кнопки до перевода</text>
+<text x="28" y="142" font-size="25" fill="#d3e1ea">Сначала откройте настройки переводчика.</text>
+<text x="28" y="174" font-size="25" fill="#d3e1ea">Сохранение пока не загружайте.</text>
+
+<path d="M59 216v520" fill="none" stroke="#456476" stroke-width="4"/>
+<circle cx="59" cy="235" r="22" fill="#b1dfef"/>
+<text x="59" y="243" text-anchor="middle" fill="#142f44" font-size="23" font-weight="bold">1</text>
+<text x="103" y="243" font-size="27" font-weight="bold" fill="#fff">Нажмите кнопку</text>
+<rect x="103" y="263" width="349" height="54" rx="10" fill="#d9edff"/>
+<text x="120" y="298" fill="#13334d" font-size="28" font-weight="bold">Перевести все моды</text>
+
+<circle cx="59" cy="366" r="22" fill="#ffe1a0"/>
+<text x="59" y="374" text-anchor="middle" fill="#382a0e" font-size="23" font-weight="bold">2</text>
+<text x="103" y="374" font-size="27" font-weight="bold" fill="#ffe5a8">Если помощник не запущен</text>
+<text x="103" y="416" font-size="24" fill="#d3e1ea">Откройте его, дождитесь готовности</text>
+<text x="103" y="448" font-size="24" fill="#d3e1ea">и вернитесь в настройки. Нажмите:</text>
+<rect x="103" y="466" width="427" height="54" rx="10" fill="#d9edff"/>
+<text x="120" y="501" fill="#13334d" font-size="28" font-weight="bold">Проверить и продолжить</text>
+
+<circle cx="59" cy="570" r="22" fill="#b1dfef"/>
+<text x="59" y="578" text-anchor="middle" fill="#142f44" font-size="23" font-weight="bold">3</text>
+<text x="103" y="578" font-size="27" font-weight="bold" fill="#fff">Не закрывайте настройки</text>
+<text x="103" y="618" font-size="24" fill="#d3e1ea">Дождитесь подтверждения от игры:</text>
+<rect x="103" y="638" width="359" height="54" rx="10" fill="#b8ebd4"/>
+<path d="m122 664 7 7 13-15" fill="none" stroke="#14503c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="154" y="673" fill="#104b37" font-size="27" font-weight="bold">Офлайн-пакет готов</text>
+
+<circle cx="59" cy="744" r="22" fill="#b8ebd4"/>
+<path d="m49 745 7 7 14-17" fill="none" stroke="#14503c" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="103" y="752" font-size="27" font-weight="bold" fill="#fff">Загружайте сохранение</text>
+<text x="103" y="792" font-size="24" fill="#d3e1ea">Для игры с пакетом помощник не нужен.</text>
+</g>
+</svg>

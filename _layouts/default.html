@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ page.lang | default: 'ru' }}"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.lang == 'en' %}Player guide{% else %}Инструкция для игроков{% endif %} · Probably Stolen Translator</title>
+<style>
+:root{color-scheme:light dark;--bg:#fafaf6;--fg:#192833;--link:#005e68;--line:#c0cfcf;--box:#eef1ed}
+@media(prefers-color-scheme:dark){:root{--bg:#12222e;--fg:#e4ecec;--link:#a0e6db;--line:#405961;--box:#192e3a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.58 system-ui,sans-serif}
+header,main,footer{max-width:55rem;margin:auto;padding:1.2rem clamp(1rem,4vw,3rem)}
+header{border-bottom:1px solid var(--line);font-size:.85rem;letter-spacing:.045em;font-weight:650}
+h1{font-size:clamp(1.85rem,5vw,2.9rem);line-height:1.12;margin:.6em 0 .35em}
+h2{margin:1.75em 0 .65em;font-size:1.48rem;line-height:1.25}li{margin:.55em 0}
+a{color:var(--link);text-underline-offset:.15em}a:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+table{display:block;max-width:100%;overflow:auto;border-collapse:collapse;font-size:.94rem}td,th{padding:.55em .72em;text-align:left;border:1px solid var(--line)}th,pre{background:var(--box)}
+pre{padding:1em;overflow:auto;border-radius:.5rem}code{font-size:.9em;overflow-wrap:anywhere}pre code{overflow-wrap:normal}
+img{display:block;width:min(100%,36rem);height:auto;margin:1.2rem auto}
+footer{border-top:1px solid var(--line);font-size:.9rem;margin-top:2rem}
+</style></head><body><header>PROBABLY STOLEN <span aria-hidden="true">/</span> LOCAL MOD TRANSLATOR · 0.4.11</header>
+<main>{{ content }}</main><footer><a href="https://github.com/sadesguy/probably-stolen-translator">GitHub</a> · <a href="https://github.com/sadesguy/probably-stolen-translator/releases/tag/v0.4.11">v0.4.11</a></footer></body></html>
