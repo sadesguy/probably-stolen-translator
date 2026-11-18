@@ -1,15 +1,17 @@
 # Probably Stolen: translate mods into Russian
 
-[Русский](README.md) · **English** · [Release 0.4.12](https://github.com/sadesguy/probably-stolen-translator/releases/tag/v0.4.12)
+[Русский](README.md) · **English** · [Release 0.4.12.1](https://github.com/sadesguy/probably-stolen-translator/releases/tag/v0.4.12.1)
 
 **Here from the game?** Leave the settings window open and [choose the Windows or Mac helper](#helper).
 
 This community mod prepares Russian translations **before you open a save**. Once you have a saved translation pack, play without the AI helper or an internet connection. You only need the helper to generate or update a pack on your own computer.
 
+Release 0.4.12.1 fixes the Mac model download. If you already have the 0.4.12 game mod or Windows helper, keep them; neither changed.
+
 ## 1. Install the game mod
 
 1. Close *Probably Stolen*. In Steam, open the game's **Manage → Browse local files**.
-2. Download [Workshop-Mod.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12/Workshop-Mod.zip). Despite the filename, this is the **manual installation**. Create a folder named `LocalModTranslator` inside the game's `Mods` folder. Put the two extracted files in it:
+2. Download [Workshop-Mod.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12.1/Workshop-Mod.zip). Despite the filename, this is the **manual installation**. Create a folder named `LocalModTranslator` inside the game's `Mods` folder. Put the two extracted files in it:
    ```text
    Mods/LocalModTranslator/
    ├── manifest.xml
@@ -28,20 +30,22 @@ Download **one** file for your computer. Extract the **entire** archive to your 
 
 | Computer | Get this ZIP | Double-click after extraction |
 | --- | --- | --- |
-| Windows 10/11 x64, Intel or AMD | [Windows-Local-AI.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12/Windows-Local-AI.zip) | `helper/Start Translator.cmd` |
-| Apple Silicon Mac running the Steam game through Wine | [Mac-Local-AI.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12/Mac-Local-AI.zip) | `companion/Start Translator.command` in **Finder**, not Wine |
+| Windows 10/11 x64, Intel or AMD | [Windows-Local-AI.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12.1/Windows-Local-AI.zip) | `helper/Start Translator.cmd` |
+| Apple Silicon Mac running the Steam game through Wine | [Mac-Local-AI.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12.1/Mac-Local-AI.zip) | `companion/Start Translator.command` in **Finder**, not Wine |
 
 ![Illustration: extract your platform ZIP outside Steam, then open Start Translator.cmd inside helper on Windows or Start Translator.command inside companion on Mac.](assets/start-helper.png)
 
 - **Windows:** Use a local NTFS drive. The helper includes Python. It needs a physical Vulkan-capable GPU, its driver, and the [Microsoft Visual C++ v14 x64 runtime](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist).
 - **Mac:** The helper uses Metal and needs native ARM64 Python 3.9 or newer. If missing, use the [Python.org macOS installer](https://www.python.org/downloads/macos/). Intel Macs and Rosetta Python are not supported.
-- **First run:** Allow about **6 GB of free disk space**, plus enough GPU memory for the model. The helper asks before downloading about **5.2 GB**: [Google's Gemma model](https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf) and the [llama.cpp engine](https://github.com/ggml-org/llama.cpp/releases/tag/b12477). No need to install them manually. Your dialogue is processed locally, never sent to a cloud translator. To check your ZIP, compare its SHA-256 against the [release checksums](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12/SHA256SUMS.txt).
+- **First run:** Allow about **6 GB of free disk space**, plus enough GPU memory for the model. The helper asks before downloading about **5.2 GB**: [Google's Gemma model](https://huggingface.co/google/gemma-4-E4B-it-qat-q4_0-gguf) and the [llama.cpp engine](https://github.com/ggml-org/llama.cpp/releases/tag/b12477). No need to install them manually. Your dialogue is processed locally, never sent to a cloud translator. To check your ZIP, compare its SHA-256 against the [release checksums](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12.1/SHA256SUMS.txt).
+
+**Saw `untrusted_download_redirect` while downloading Gemma on Mac?** Download the new [Mac-Local-AI.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12.1/Mac-Local-AI.zip) and extract it to a separate folder. With the game open, double-click `companion/Start Translator.command` **from the new folder**. If the existing llama.cpp engine passes verification, the helper asks to download only the model.
 
 ### If your Mac says “Start Translator.command” Not Opened
 
 If Apple says it **could not verify** the file, click **Done**. The launcher is unsigned and has not been notarized by Apple. If macOS instead says the file **contains malware**, is damaged or will damage your computer, **do not run it**.
 
-If you downloaded the ZIP from this release, open Terminal and run `shasum -a 256 ~/Downloads/Mac-Local-AI.zip`. Compare the result with the `Mac-Local-AI.zip` line in the [0.4.12 checksums](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12/SHA256SUMS.txt). Stop if they differ.
+If you downloaded the ZIP from this release, open Terminal and run `shasum -a 256 ~/Downloads/Mac-Local-AI.zip`. Compare the result with the `Mac-Local-AI.zip` line in the [0.4.12.1 checksums](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12.1/SHA256SUMS.txt). Stop if they differ.
 
 Only if you trust the source and the checksum matches: go to **System Settings → Privacy & Security**, find the warning for `Start Translator.command`, click **Open Anyway**, then **Open**. This makes an exception for that file only; don't disable Gatekeeper. [Apple’s walkthrough with screenshots](https://support.apple.com/en-us/102445).
 
