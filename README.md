@@ -1,15 +1,17 @@
 # Probably Stolen: перевод модов на русский
 
-**Русский** · [English guide](GUIDE.en.md) · [Все файлы версии 0.4.11](https://github.com/sadesguy/probably-stolen-translator/releases/tag/v0.4.11)
+**Русский** · [English guide](GUIDE.en.md) · [Все файлы версии 0.4.12](https://github.com/sadesguy/probably-stolen-translator/releases/tag/v0.4.12)
+
+**Открыли страницу из игры?** Не закрывайте настройки. [Выберите помощник для Windows или Mac](#helper).
 
 Переводчик готовит русский текст **до загрузки сохранения**. Помощник с локальным ИИ нужен, только если вы хотите создать или обновить перевод. Если совместимый русский пакет уже установлен, можно сразу играть: сервер, модель и интернет для чтения пакета не нужны.
 
-Это неофициальный мод сообщества для [Probably Stolen](https://store.steampowered.com/app/4348910/Probably_Stolen/). Ниже — установка из GitHub. Версия 0.4.11 в Мастерскую Steam не опубликована.
+Это неофициальный мод сообщества для [Probably Stolen](https://store.steampowered.com/app/4348910/Probably_Stolen/). Ниже — установка из GitHub. Версия 0.4.12 в Мастерскую Steam не опубликована.
 
 ## 1. Установите мод и включите его в игре
 
 1. Закройте игру. В библиотеке Steam нажмите правой кнопкой на **Probably Stolen → Управление → Просмотреть локальные файлы**.
-2. Скачайте **[Workshop-Mod.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.11/Workshop-Mod.zip)**. В каталоге игры создайте папку `Mods/LocalModTranslator`. Положите в неё **два файла из архива**, не сам ZIP. Проверьте, что между папкой мода и файлами нет ещё одной вложенной папки:
+2. Скачайте **[Workshop-Mod.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12/Workshop-Mod.zip)**. В каталоге игры создайте папку `Mods/LocalModTranslator`. Положите в неё **два файла из архива**, не сам ZIP. Проверьте, что между папкой мода и файлами нет ещё одной вложенной папки:
    ```text
    Probably Stolen/
    └── Mods/
@@ -17,15 +19,17 @@
            ├── manifest.xml
            └── LocalModTranslator.dll
    ```
-3. Откройте игру → **Моды** → **Локальный переводчик модов** → **Активировать**. Игра покажет сетевое разрешение: мод использует его для связи с помощником на вашем компьютере. Включите также моды, которые хотите перевести. Перезапустите игру и выберите **русский язык**. [Как работает активация — инструкция разработчиков игры.](https://github.com/dragonpan2/probably-stolen-modding#run-the-game-and-activate-the-mod)
-4. В главном меню откройте **Моды → Локальный переводчик модов → Настройки** и нажмите **«Перевести все моды»**. Если появится инструкция по запуску сервера, так и должно быть: **оставьте игру открытой** и перейдите к шагу 2 ниже.
+3. Откройте **Моды → Локальный переводчик модов** и активируйте его. Игра запросит два разрешения: сеть для связи с помощником на вашем компьютере и открытие ссылок в браузере для этой инструкции. Если обновляетесь с [0.4.11](https://github.com/sadesguy/probably-stolen-translator/releases/tag/v0.4.11), проверьте разрешения и подтвердите активацию заново: добавилось разрешение на открытие ссылок. Включите нужные моды, перезапустите игру и выберите **русский язык**. [Правила активации и обновления модов.](https://github.com/dragonpan2/probably-stolen-modding/blob/main/ModdingGuide.md#what-players-see)
+4. В главном меню откройте **Моды → Локальный переводчик модов → Настройки → Перевести все моды**. Если игра не найдёт помощник, нажмите **«Открыть инструкцию на GitHub»**. Кнопка откроет эту страницу в браузере; скачивать и запускать помощник нужно самостоятельно. **Оставьте настройки открытыми.**
+
+<a id="helper" name="helper"></a>
 
 ## 2. Скачайте один помощник и дважды нажмите нужный файл
 
 | Ваш компьютер | Что скачать | Что открыть после распаковки |
 |---|---|---|
-| Windows 10/11 x64 (Intel или AMD), видеокарта с Vulkan | [Windows-Local-AI.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.11/Windows-Local-AI.zip) | Папка `helper` → **`Start Translator.cmd`** |
-| Mac с Apple Silicon и игрой Steam, запущенной через Wine | [Mac-Local-AI.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.11/Mac-Local-AI.zip) | В **Finder**: папка `companion` → **`Start Translator.command`** |
+| Windows 10/11 x64 (Intel или AMD), видеокарта с Vulkan | [Windows-Local-AI.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12/Windows-Local-AI.zip) | Папка `helper` → **`Start Translator.cmd`** |
+| Mac с Apple Silicon и игрой Steam, запущенной через Wine | [Mac-Local-AI.zip](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12/Mac-Local-AI.zip) | В **Finder**: папка `companion` → **`Start Translator.command`** |
 
 **Распакуйте архив целиком** в свою папку вне Steam. В Windows выберите «Извлечь всё…», а не запускайте файл прямо из окна ZIP. На Mac откройте архив двойным щелчком. Не копируйте помощник в `Mods`: [сканер игры не допускает там такие программы и скрипты](https://github.com/dragonpan2/probably-stolen-modding/blob/main/ModdingGuide.md#capabilities-and-the-scanner).
 
@@ -55,4 +59,4 @@
 | «0 строк для офлайн-перевода» | В новый пакет не записано ни одной строки. Убедитесь, что нужные моды скачаны и содержат таблицы локализации. Уже имеющийся русский текст не требует нового пакета. |
 | Одна фраза на другом языке или с ошибкой | Если это диалог, попробуйте полную проверку. Переводчик может пропускать неоднозначные строки. Надписи на картинках и текст, который другой мод рисует самостоятельно, могут быть недоступны. |
 
-**Проверить загрузки:** [SHA256SUMS.txt для трёх архивов](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.11/SHA256SUMS.txt). [Лицензии и компоненты помощника Windows](notices/Windows-components.txt). В релизе нет модели, сохранений или переводов чужих модов.
+**Проверить загрузки:** [SHA256SUMS.txt для трёх архивов](https://github.com/sadesguy/probably-stolen-translator/releases/download/v0.4.12/SHA256SUMS.txt). [Лицензии и компоненты помощника Windows](notices/Windows-components.txt). В релизе нет модели, сохранений или переводов чужих модов.
